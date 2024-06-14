@@ -25,6 +25,24 @@
 
                     {% endif %}
                     <br/> <br/>
+                    <div class="row ">
+                        <div class="col-md-2"> Quantity: </div>
+                            <div class="col-md-2">
+                                <select class="form-select" id="qty-cart">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                    </div>
+                    <br/> <br/>
                     <a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
                     <button type="button" value="{{product.id}}" class="btn btn-secondary"
                             id="add-cart">Add to cart
