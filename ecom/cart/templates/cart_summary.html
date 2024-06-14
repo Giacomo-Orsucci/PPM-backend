@@ -47,7 +47,7 @@
                                             {% endif %}
                                         {% endfor %}
 
-                                    <option value="1">3</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -65,6 +65,9 @@
                         <button type="button" data-index="{{product.id}}" class="btn btn-secondary update-cart">
                             Update
                         </button>
+                        <button type="button" data-index="{{product.id}}" class="btn btn-danger delete-product">
+                            Remove
+                        </button>
 
                     </div>
                 </div>
@@ -72,6 +75,11 @@
         </div>
 
     {% endfor %}
+    <br/>
+    <b><h3>Total: €{{ totals }}</h3></b>
+    <br/><br/><br/>
+
+
     {% else %}
     <div class="container justify-content-center">
         <br/><br/><br/><br/><br/><br/>
@@ -94,6 +102,7 @@
 
 
 <script>
+    //to update item quantity in the cart
     $(document).on('click', '.update-cart', function (e) {
         e.preventDefault();
         //getting the exact product id
@@ -110,6 +119,31 @@
 
             success: function (json) {
                location.reload();
+            },
+
+            error:function (xhr, errmsg, err) {
+
+            }
+
+        });
+
+    })
+    //to delete items in the cart
+    $(document).on('click', '.delete-product', function (e) {
+        e.preventDefault();
+        //getting the exact product id
+
+        $.ajax({
+            type:'POST',
+            url:'{% url "cart_delete" %}',
+            data:{
+                product_id: $(this).data('index'),
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                action: 'post'
+            },
+
+            success: function (json) {
+                location.reload();
             },
 
             error:function (xhr, errmsg, err) {
