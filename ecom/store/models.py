@@ -1,7 +1,31 @@
 from django.db import models
 import datetime
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
 
-# Create your models here.
+#Customer Profile
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    date_modified = models.DateTimeField(User, auto_now=True)
+    phone =  models.CharField(max_length=20, blank=True)
+    address1 = models.CharField(max_length=200, blank=True)
+    address2 = models.CharField(max_length=200, blank=True)
+    city = models.CharField(max_length=200, blank=True)
+    state = models.CharField(max_length=200, blank=True)
+    zipCode = models.CharField(max_length=200, blank=True)
+    country = models.CharField(max_length=200, blank=True)
+
+    def __str__(self):
+        return self.user.username
+
+#default user profile when user signs up
+def create_profile(sender, instance, created, **kwargs):
+    if created:
+        user_profile = Profile.objects.create(user=instance)
+        user_profile.save()
+
+post_save.connect(create_profile, sender=User)
+
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
@@ -40,7 +64,7 @@ class Order(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
-    address = models.CharField(max_length=250, default='', blank=True)
+    address = models.CharField(max_length=200, default='', blank=True)
     phone = models.CharField(max_length=20, default='', blank=True)
     date = models.DateField(default=datetime.datetime.today)
     status = models.BooleanField(default=False)
