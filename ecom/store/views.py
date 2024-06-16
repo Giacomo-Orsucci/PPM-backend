@@ -6,6 +6,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UpdateUserForm, ChangePasswordForm, UserInfoForm
 from django import forms
+from django.db.models import Q
+import json
+from cart.cart import Cart
 
 def add_variable_to_context(request):
     return {
@@ -45,6 +48,18 @@ def login_user(request):
 
         if user is not None:
             login(request, user)
+
+            #to retrieve the old cart from the Profile model
+            current_user = Profile.objects.get(user__id=request.user.id)
+            saved_cart = current_user.old_cart
+
+            if saved_cart:
+                #convert to dictionary using JSON
+                converted_cart = json.loads(saved_cart)
+                cart = Cart(request)
+                for key, value in converted_cart.items():
+                    cart.db_add(product=key, quantity=int(value))
+
             messages.success(request, ("You are logged in!"))
             return redirect('home')
         else:
@@ -132,4 +147,17 @@ def update_info(request):
         messages.success(request, "You need to be logged in to update your profile.")
         return redirect('home')
 
+def search(request):
+    if request.method == 'POST':
+        searched = request.POST['searched']
 
+        searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))
+        if not searched:
+            messages.success(request, ("No results found."))
+            return render(request, 'search.html', {})
+        else:
+            return render(request, 'search.html', {'searched':searched})
+       # products = Product.objects.filter(name__contains=searched)
+        return render(request, 'search.html', {'searched':searched})
+    else:
+        return render(request, 'search.html', {})
