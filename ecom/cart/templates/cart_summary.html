@@ -76,7 +76,10 @@
 
     {% endfor %}
     <br/>
-    <b><h3>Total: €{{ totals }}</h3></b>
+    <div class="justify-content-end">
+        <b><h3>Total: €{{ totals }}</h3></b>
+        <a href="{% url 'checkout' %}" class="btn btn-success">Checkout</a>
+    </div>
     <br/><br/><br/>
 
 
