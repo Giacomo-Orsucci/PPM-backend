@@ -3,8 +3,8 @@
 <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Billing info</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Enter your payment info</p>
+            <h1 class="display-4 fw-bolder">Processing order</h1>
+            <p class="lead fw-normal text-white-50 mb-0">To change</p>
         </div>
     </div>
 </header>
@@ -19,17 +19,17 @@
                 </div>
                 <div class="card-body">
                     {% for product in cart_products%}
-                        {{ product.name }}
-                        {% if product.is_on_sale %}
-                            <s>€{{ product.price }}</s> €{{ product.sale_price }}
-                        {% else %}
-                            €{{ product.price }}
+                    {{ product.name }}
+                    {% if product.is_on_sale %}
+                    <s>€{{ product.price }}</s> €{{ product.sale_price }}
+                    {% else %}
+                    €{{ product.price }}
                     {% endif %}
                     <br/>
                     <small>Quantity:
                         {% for key, value in quantities.items%}
-                            {% if key == product.id|slugify %}
-                                {{ value }}
+                        {% if key == product.id|slugify %}
+                        {{ value }}
                         {% endif %}
                         {% endfor %}
                     </small>
@@ -58,8 +58,8 @@
                     Shipping info
                 </div>
                 <div class="card-body">
-                    Name: {{ shipping_info.shipping_full_name }} <br/>
-                    Email: {{ shipping_info.shipping_email }} <br/>
+                    Name:{{ shipping_info.shipping_full_name }} <br/>
+                    Email:{{ shipping_info.shipping_email }} <br/>
                     Address1: {{ shipping_info.shipping_address1 }} <br/>
                     Address2: {{ shipping_info.shipping_address2 }} <br/>
                     City: {{ shipping_info.shipping_city }} <br/>
@@ -78,10 +78,11 @@
                 <div class="card-body">
                     <form method = "POST" action="{% url 'process_order' %}">
                         {% csrf_token %}
-                       {{ billing_form.as_p }}
+                        {{ billing_form.as_p }}
+
                 </div>
             </div>
-            <br/>
+
             <button type="submit" class="btn btn-sm btn-secondary">Pay now</button>
             </form>
 
