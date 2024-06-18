@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <b>Email: </b> {{ order.email }} <br/>
                     {% if order.date_shipped %}
-                        Date Shipped: {{ order.date_shipped }}
+                        <b>Date Shipped:</b> {{ order.date_shipped }}
                     {% else %}
                     <b>Date Ordered: </b> {{order.date_ordered}}
                     {% endif %}
@@ -28,7 +28,20 @@
                         {{item.product}} - {{item.quantity}} - €{{item.price}} <br/>
 
                     {% endfor %}
-
+                    <br/><br/>
+                    {% if not order.shipped %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="shipping_status" value="true">
+                            <button type="submit" class="btn btn-success"> Mark as shipped </button>
+                        </form>
+                    {% else %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="shipping_status" value="false">
+                            <button type="submit" class="btn btn-danger"> Mark as not shipped </button>
+                        </form>
+                    {% endif %}
 
                 </div>
             </div>
