@@ -58,14 +58,14 @@
                     Shipping info
                 </div>
                 <div class="card-body">
-                    Name: {{ shipping_info.shipping_full_name }} <br/>
-                    Email: {{ shipping_info.shipping_email }} <br/>
-                    Address1: {{ shipping_info.shipping_address1 }} <br/>
-                    Address2: {{ shipping_info.shipping_address2 }} <br/>
-                    City: {{ shipping_info.shipping_city }} <br/>
-                    Zip: {{ shipping_info.shipping_zip }} <br/>
-                    State: {{ shipping_info.shipping_state }} <br/>
-                    Country: {{ shipping_info.shipping_country }} <br/>
+                   <b> Name: </b>{{ shipping_info.shipping_full_name }} <br/>
+                   <b> Email: </b> {{ shipping_info.shipping_email }} <br/>
+                   <b> Address1: </b> {{ shipping_info.shipping_address1 }} <br/>
+                   <b> Address2: </b> {{ shipping_info.shipping_address2 }} <br/>
+                   <b> City: </b> {{ shipping_info.shipping_city }} <br/>
+                   <b> Zip: </b> {{ shipping_info.shipping_zipcode }} <br/>
+                   <b> State: </b> {{ shipping_info.shipping_state }} <br/>
+                   <b> Country: </b> {{ shipping_info.shipping_country }} <br/>
                     <br/>
                     <a href="{% url 'checkout' %}" class="btn btn-secondary"> Update shipping</a>
                 </div>

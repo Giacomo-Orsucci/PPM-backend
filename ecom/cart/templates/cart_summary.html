@@ -105,6 +105,8 @@
 
 
 <script>
+    //to avoid a not so good page reloading
+
     //to update item quantity in the cart
     $(document).on('click', '.update-cart', function (e) {
         e.preventDefault();
@@ -127,9 +129,7 @@
             error:function (xhr, errmsg, err) {
 
             }
-
         });
-
     })
     //to delete items in the cart
     $(document).on('click', '.delete-product', function (e) {
