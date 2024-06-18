@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{%block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-8 text-center">
+            <br/><br/><br/>
+
+            <div class="card">
+                <div class="card-header">
+                    <b> Order {{ order.id }} - €{{order.amount_paid}} </b>
+                </div>
+                <div class="card-body">
+                    <b>Email: </b> {{ order.email }} <br/>
+                    {% if order.date_shipped %}
+                        <b>Date Shipped:</b> {{ order.date_shipped }}
+                    {% else %}
+                    <b>Date Ordered: </b> {{order.date_ordered}}
+                    {% endif %}
+                    <br/>
+                    <b>Full name: </b> {{ order.full_name }}<br/>
+                    <b>Shipping Address: </b>{{ order.shipping_address }}<br/>
+                    <br/><br/><br/>
+                    <h5>Items in the order:</h5> <br/>
+                    {% for item in items %}
+
+                        {{item.product}} - {{item.quantity}} - €{{item.price}} <br/>
+
+                    {% endfor %}
+                    <br/><br/>
+                    {% if not order.shipped %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="shipping_status" value="true">
+                            <button type="submit" class="btn btn-success"> Mark as shipped </button>
+                        </form>
+                    {% else %}
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="shipping_status" value="false">
+                            <button type="submit" class="btn btn-danger"> Mark as not shipped </button>
+                        </form>
+                    {% endif %}
+
+                </div>
+            </div>
+
+
+            <br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/>
+            <br/>
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
