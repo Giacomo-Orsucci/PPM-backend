@@ -16,10 +16,11 @@ non è necessario che un utente si registri.
 Nel caso dell'utente admin, nella nav-bar è riportata una sezione di gestione delle spedizioni dei vari ordini effettuati dagli utenti.
 Infine, dal pannello di controllo dell'utente admin è possibile visualizzare, modificare e cancellare prodotti, categorie, ordini, utenti, indirizzi di spedizione ecc.
 
-Il sito è visionabile al seguente [indirizzo]([url](https://ppm-backend-production-d5b0.up.railway.app/)).
+Il sito è visionabile al seguente [indirizzo](https://ppm-backend-production-d5b0.up.railway.app/).
 
 Se si volesse loggare con l'account admin per visualizzare la pagina di gestione delle spedizioni degli ordini o il panello di controllo di amministrazione 
 (ai fini della valutazione), mi potete contattare al seguente indirizzo e-mail: orsucci.giacomo@gmail.com e provvederò subito alla condivisione delle credenziali.
 
+Il template usato è stato scaricato gratuitamente dal sito [startbootstrap.com](https://startbootstrap.com/) e le immagini (free copyright) dal sito [unsplash.com](https://unsplash.com/it/images).
 
 
