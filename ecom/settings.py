@@ -21,7 +21,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ppm-backend-production-d5b0.up.railway.app', 'https://ppm-backend-production-d5b0.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['ppm-backend-production-d5b0.up.railway.app', 'https://ppm-backend-production-d5b0.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://ppm-backend-production-d5b0.up.railway.app']
 
 
 # Application definition
