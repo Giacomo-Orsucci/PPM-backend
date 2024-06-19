@@ -19,9 +19,9 @@ SECRET_KEY = 'django-insecure-bbv9wv_a)ab_g6ncf514w5==y4-eqtlgc-_g&#*3n0h&$brue(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ppm-backend-production-d5b0.up.railway.app', 'https://ppm-backend-production-d5b0.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['ppm-backend-production-d5b0.up.railway.app', 'https://ppm-backend-production-d5b0.up.railway.app']
 
 
 # Application definition
