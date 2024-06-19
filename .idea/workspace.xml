@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="598eea15-2b98-4c77-adf8-45371af794c0" name="Changes" comment="Deploy">
+      <change afterPath="$PROJECT_DIR$/ecom/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecom/ecom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecom/ecom/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="payment-and-orders" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hjit3gU0bFgKe7HxFr7yd61CrT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ecom/payment" />
+      <recent name="$PROJECT_DIR$/ecom" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="598eea15-2b98-4c77-adf8-45371af794c0" name="Changes" comment="" />
+      <created>1718114098716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718114098716</updated>
+      <workItem from="1718114099800" duration="7055000" />
+      <workItem from="1718182023866" duration="18989000" />
+      <workItem from="1718266093431" duration="26009000" />
+      <workItem from="1718356141656" duration="18350000" />
+      <workItem from="1718442440300" duration="4096000" />
+      <workItem from="1718456607590" duration="11839000" />
+      <workItem from="1718528561894" duration="63337000" />
+      <workItem from="1718801988776" duration="2514000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial project setup, free bootstrap template installed and modified, added the model, added user registration, login and logout, product pages and homepage">
+      <option name="closed" value="true" />
+      <created>1718267546897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718267546897</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git ignore added">
+      <option name="closed" value="true" />
+      <created>1718270024204</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718270024204</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added nav-bar dropdown with categories links">
+      <option name="closed" value="true" />
+      <created>1718284810204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718284810204</updated>
+    </task>
+    <task id="LOCAL-00004" summary="started with cart implementation">
+      <option name="closed" value="true" />
+      <created>1718294098860</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718294098860</updated>
+    </task>
+    <task id="LOCAL-00005" summary="continuing with cart implementation (update)">
+      <option name="closed" value="true" />
+      <created>1718364912401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718364912402</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added cart &quot;delete item&quot; option">
+      <option name="closed" value="true" />
+      <created>1718375060207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718375060207</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added user update profile and password options">
+      <option name="closed" value="true" />
+      <created>1718456866208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718456866208</updated>
+    </task>
+    <task id="LOCAL-00008" summary="little refactor and versioning adjustments">
+      <option name="closed" value="true" />
+      <created>1718458773500</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718458773500</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added user information and profile update">
+      <option name="closed" value="true" />
+      <created>1718469945368</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718469945368</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added cart consistency on login and logout and products searching bar and page">
+      <option name="closed" value="true" />
+      <created>1718543344138</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718543344138</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added shipping info and shipping info form">
+      <option name="closed" value="true" />
+      <created>1718551522814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718551522814</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added shipping info and shipping info form">
+      <option name="closed" value="true" />
+      <created>1718551538572</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718551538572</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added shipping info and shipping info form">
+      <option name="closed" value="true" />
+      <created>1718551694435</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718551694435</updated>
+    </task>
+    <task id="LOCAL-00014" summary="created order model">
+      <option name="closed" value="true" />
+      <created>1718553314969</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718553314969</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added order checkout and fixed billing">
+      <option name="closed" value="true" />
+      <created>1718622854349</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718622854349</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Continuing with billing info (to test)">
+      <option name="closed" value="true" />
+      <created>1718634037511</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718634037511</updated>
+    </task>
+    <task id="LOCAL-00017" summary="finished order process (for both registered and unregistered users) and expanded admin order management dashboard">
+      <option name="closed" value="true" />
+      <created>1718662364481</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718662364481</updated>
+    </task>
+    <task id="LOCAL-00018" summary="finished order process (for both registered and unregistered users) and expanded admin order management dashboard">
+      <option name="closed" value="true" />
+      <created>1718662379663</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718662379663</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Started with shipping management">
+      <option name="closed" value="true" />
+      <created>1718708694310</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718708694310</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added shipping management">
+      <option name="closed" value="true" />
+      <created>1718720294689</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718720294689</updated>
+    </task>
+    <task id="LOCAL-00021" summary="final adjustments">
+      <option name="closed" value="true" />
+      <created>1718724444609</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718724444609</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Deploy">
+      <option name="closed" value="true" />
+      <created>1718809739197</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718809739198</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial project setup, free bootstrap template installed and modified, added the model, added user registration, login and logout, product pages and homepage" />
+    <MESSAGE value="git ignore added" />
+    <MESSAGE value="added nav-bar dropdown with categories links" />
+    <MESSAGE value="started with cart implementation" />
+    <MESSAGE value="continuing with cart implementation (update)" />
+    <MESSAGE value="added cart &quot;delete item&quot; option" />
+    <MESSAGE value="added user update profile and password options" />
+    <MESSAGE value="little refactor and versioning adjustments" />
+    <MESSAGE value="added user information and profile update" />
+    <MESSAGE value="added cart consistency on login and logout and products searching bar and page" />
+    <MESSAGE value="Added shipping info and shipping info form" />
+    <MESSAGE value="created order model" />
+    <MESSAGE value="Added order checkout and fixed billing" />
+    <MESSAGE value="Continuing with billing info (to test)" />
+    <MESSAGE value="finished order process (for both registered and unregistered users) and expanded admin order management dashboard" />
+    <MESSAGE value="Started with shipping management" />
+    <MESSAGE value="added shipping management" />
+    <MESSAGE value="final adjustments" />
+    <MESSAGE value="Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy" />
+  </component>
+</project>
