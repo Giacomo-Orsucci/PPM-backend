@@ -11,7 +11,8 @@ in contesti commerciali reali.
 L'e-commerce così creato mostra nella homepage la lista di oggetti disponibili in vendita, che possono essere ispezionati nel dettaglio, aggiunti al carrello e ricercati per categorie o mediante 
 l'apposita barra di ricerca presente nella nav-bar. Tramite la nav-bar, oltre a poter navigare tra le varie sezioni del sito, è inoltre possibile registrare un nuovo utente
 (così da salvarne tutti i dati principali e non doverli reinserire tutte le volte), aggiornare i dati del proprio profilo e loggarsi (per gli utenti già registrati). Per effettuare un ordine
-non è necessario che un utente si registri.
+non è necessario che un utente si registri ed è sufficiente recarsi nel carrello (dove è possibile modificare le quantità e le selezioni dei prodotti inseriti)
+ed effettuare il checkout dei prodotti che si intende acquistare.
 
 Nel caso dell'utente admin, nella nav-bar è riportata una sezione di gestione delle spedizioni dei vari ordini effettuati dagli utenti.
 Infine, dal pannello di controllo dell'utente admin è possibile visualizzare, modificare e cancellare prodotti, categorie, ordini, utenti, indirizzi di spedizione ecc.
