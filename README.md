@@ -21,6 +21,13 @@ Il sito è visionabile al seguente [indirizzo](https://ppm-backend-production-d5
 Se si volesse loggare con l'account admin per visualizzare la pagina di gestione delle spedizioni degli ordini o il panello di controllo di amministrazione 
 (ai fini della valutazione), mi potete contattare al seguente indirizzo e-mail: orsucci.giacomo@gmail.com e provvederò subito alla condivisione delle credenziali.
 
+Se invece si volesse loggare con account di prova già esistente (non amministrativo), le credenziali sono le seguenti:
+
+username: MarioRossi99
+password: prova12345!
+
+In ogni momento è possibile creare ed usufruire di un nuovo account.
+
 Il template usato è stato scaricato gratuitamente dal sito [startbootstrap.com](https://startbootstrap.com/) e le immagini (free copyright) dal sito [unsplash.com](https://unsplash.com/it/images).
 
 
